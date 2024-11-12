@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import dev.bluemethyst.apps.notix.api.getNotes
 import dev.bluemethyst.apps.notix.icons.Delete
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
@@ -67,7 +68,9 @@ fun App() {
         Scaffold(
             floatingActionButton = {
                 FloatingActionButton(
-                    onClick = { showNewNoteDialog = true },
+                    onClick = {
+                        showNewNoteDialog = true
+                    },
                     containerColor = DarkColorPalette.primary
                 ) {
                     Icon(Icons.Default.Add, contentDescription = "Add Note")
