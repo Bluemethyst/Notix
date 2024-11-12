@@ -1,7 +1,11 @@
+// desktopMain/kotlin/dev/bluemethyst/apps/notix/Fonts.kt
 package dev.bluemethyst.apps.notix
 
 import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.platform.Font
+import java.io.File
 
 actual fun getFontResource(resourceName: String): Font {
-    TODO("Not yet implemented")
+    val fontFile = File("src/desktopMain/resources/fonts/$resourceName.ttf")
+    return Font(fontFile)
 }
