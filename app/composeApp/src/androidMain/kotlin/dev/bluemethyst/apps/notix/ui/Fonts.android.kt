@@ -1,8 +1,9 @@
 // androidMain/kotlin/dev/bluemethyst/apps/notix/Fonts.android.kt
-package dev.bluemethyst.apps.notix
+package dev.bluemethyst.apps.notix.ui
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontWeight
+import dev.bluemethyst.apps.notix.R
 
 actual fun getFontResource(resourceName: String): Font {
     return when (resourceName) {

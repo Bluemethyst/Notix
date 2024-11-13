@@ -1,5 +1,5 @@
 // desktopMain/kotlin/dev/bluemethyst/apps/notix/Fonts.kt
-package dev.bluemethyst.apps.notix
+package dev.bluemethyst.apps.notix.ui
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.platform.Font
